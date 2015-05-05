@@ -31,6 +31,32 @@ To see this in practice, consider the example of 1990.
 
 In Roman numerals 1990 is MCMXC:
 
+last-digit:
+1-3: I
+4: IV
+5: V
+6-8: V+I
+9: IX
+10: X
+
+10-30: X X X
+40: XL
+50: L
+60-80: LX X X
+90: XC
+
+100: C
+100-300: C C C
+400: CD
+448: CDXLVIII
+500: D
+
+1000: M
+
+
+
+
+
 1000=M
 900=CM
 90=XC

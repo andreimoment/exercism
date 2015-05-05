@@ -3,18 +3,16 @@
 class Squares
 
   def initialize(max_n)
-    @max_n = max_n
+    @sequence = 1..max_n
   end
 
   def square_of_sums
-    (1..@max_n).inject(0) do |sum, n|
-      sum += n
-    end ** 2
+    @sequence.reduce(:+) ** 2
   end
 
   def sum_of_squares
-    (1..@max_n).inject(0) do |sum, n|
-      sum += n ** 2
+    @sequence.reduce do |sum, n|
+      sum + n ** 2
     end
   end
 
